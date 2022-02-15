@@ -1,5 +1,1 @@
-<app-photo
-  url="https://upload.wikimedia.org/wikipedia/commons/4/43/Bundesarchiv_Bild_101I-554-0872-35%2C_Tunesien%2C_Panzer_VI_%28Tiger_I%29.jpg"
-  description="Tanque tiger"></app-photo>
-<app-photo url="https://upload.wikimedia.org/wikipedia/commons/6/64/T29_Heavy_Tank.png" description="Tanque t29">
-</app-photo>
+<app-photo *ngFor="let photo of photos" [url]="photo.url" [description]="photo.description"></app-photo>

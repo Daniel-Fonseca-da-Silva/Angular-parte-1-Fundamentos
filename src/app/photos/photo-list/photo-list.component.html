@@ -5,3 +5,6 @@
 </div>
 
 <ap-photos [photos]="photos | filterByDescription: filter"></ap-photos>
+
+<ap-load-buttom (click)="load()" [hasMore]="hasMore">
+</ap-load-buttom>

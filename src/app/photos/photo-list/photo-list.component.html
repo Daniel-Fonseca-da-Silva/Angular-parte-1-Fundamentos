@@ -1,5 +1,12 @@
-<ap-search></ap-search>
-<ap-photos [photos]="photos | filterByDescription: filter"></ap-photos>
+<ap-search 
+    (onTyping)="filter = $event">
+</ap-search>
 
-<ap-load-buttom (click)="load()" [hasMore]="hasMore">
+<ap-photos 
+    [photos]="photos | filterByDescription: filter">
+</ap-photos>
+
+<ap-load-buttom
+    (click)="load()"
+    [hasMore]="hasMore">
 </ap-load-buttom>
